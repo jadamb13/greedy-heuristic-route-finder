@@ -1,7 +1,6 @@
-# Author: James Bennett, Student ID: 009454560
 
-from helper import *
-from Hash import ChainingHashTable
+from src.helper import *
+from src.Hash import ChainingHashTable
 from Truck import *
 
 
@@ -157,7 +156,7 @@ if __name__ == '__main__':
     my_hash = ChainingHashTable()
 
     # Load packages to Hash Table
-    load_package_data('package_data.csv', my_hash)
+    load_package_data('../assets/package_data.csv', my_hash)
 
     # Create truck objects and load them
     truck1 = Truck(1)
@@ -166,7 +165,7 @@ if __name__ == '__main__':
     load_trucks(truck1, truck2, truck3)
 
     # Load address and distance data from csv file into lists
-    distance_data = load_distance_data('distances.csv')
+    distance_data = load_distance_data('../assets/distances.csv')
 
     # Find routes for trucks
     find_route(truck1, distance_data)
