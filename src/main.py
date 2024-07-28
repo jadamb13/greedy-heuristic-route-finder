@@ -1,7 +1,7 @@
 
-from src.helper import *
-from src.Hash import ChainingHashTable
-from Truck import *
+from src.model.helper import *
+from src.model.Hash import ChainingHashTable
+from src.model.Truck import *
 
 
 def get_package_data():
